@@ -5,7 +5,8 @@
 export interface Project {
     title: string;
     description: string;
-    url: string;
+    githubUrl?: string;
+    demoUrl?: string;
     tags: string[];
     thumbnail: string;
     status: ProjectStatus;

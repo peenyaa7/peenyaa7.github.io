@@ -14,7 +14,7 @@ export const ProjectsSection = () => {
 
                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                     {
-                        PROJECTS.map((project, index) => {
+                        PROJECTS.map((project) => {
                             return (
                                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                                     <ProjectCard project={project} />

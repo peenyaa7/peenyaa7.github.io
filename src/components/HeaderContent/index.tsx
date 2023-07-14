@@ -7,14 +7,12 @@ export const HeaderContent = () => {
             <div className="profile">
                 <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle" />
                 <h1 className="text-light">
-                    <a href="index.html">Francisco Javier<br/>Peña Vela</a>
+                    <a href="#">Francisco Javier<br/>Peña Vela</a>
                 </h1>
                 <div className="social-links mt-3 text-center">
-                    <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                    <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                    <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                    <a href="#" className="gmail"><i className="bx bxl-gmail"></i></a>
-                    <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/peenyaa7" className="github"><i className="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/peenyaa7/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                    <a href="mailto:peenyaa7@gmail.com" className="gmail"><i className="bx bxl-gmail"></i></a>
                 </div>
             </div>
 
