@@ -1,0 +1,19 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  daisyui: {
+    themes: ["night", "fantasy"],
+    
+  },
+  plugins: [
+    require("daisyui"),
+    require("tailwindcss-animated"),
+  ],
+}
+

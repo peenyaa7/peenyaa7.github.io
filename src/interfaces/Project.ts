@@ -3,8 +3,8 @@
  * Representa una entrada de proyecto.
  */
 export interface Project {
-    title: string;
-    description: string;
+    titleI18n: string;
+    descriptionI18n: string;
     githubUrl?: string;
     demoUrl?: string;
     tags: string[];
