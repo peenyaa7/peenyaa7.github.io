@@ -16,3 +16,13 @@ export enum TechnologyType {
     TOOL,
     OTHER
 }
+
+// Enum to name
+export const TECHNOLOGY_TYPES: { key: TechnologyType, value: string }[] = [
+    { key: TechnologyType.FRONTEND, value: 'Frontend 🎨' },
+    { key: TechnologyType.BACKEND, value: 'Backend ⚙' },
+    { key: TechnologyType.DATABASE, value: 'Base de datos 📚' },
+    { key: TechnologyType.DEVOPS, value: 'DevOps 🚀' },
+    { key: TechnologyType.TOOL, value: 'Herramientas 🛠' },
+    { key: TechnologyType.OTHER, value: 'Extra 😎' },
+]
