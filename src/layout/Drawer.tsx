@@ -8,10 +8,16 @@ import { Trans, useTranslation } from 'react-i18next'
 import { IconRocket } from '../icons/IconRocket'
 import { IconBriefcase } from '../icons/IconBriefcase'
 import { IconHandPeace } from '../icons/IconHandPeace'
+import ReactGA from 'react-ga4'
+import { useEffect } from 'react'
 
 export const Drawer = () => {
 
     useTranslation();
+
+    useEffect(() => {
+        ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
+    }, []);
 
     return (
         <div className='drawer drawer-end'>

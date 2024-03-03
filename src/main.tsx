@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Drawer } from './layout/Drawer';
+import ReactGA from 'react-ga4';
+import './i18n/i18n';
 import './index.css';
 
-import './i18n/i18n';
+ReactGA.initialize('G-NRQS4G8TGY');
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement

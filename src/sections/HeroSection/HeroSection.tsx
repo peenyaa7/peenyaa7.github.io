@@ -2,7 +2,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import { IconGithub } from '../../icons/IconGithub';
 import { IconLinkedIn } from '../../icons/IconLinkedIn';
 import { IconGmail } from '../../icons/IconGmail';
-
+import ReactGA from 'react-ga4';
 
 export const HeroSection = () => {
 
@@ -18,7 +18,12 @@ export const HeroSection = () => {
 
                 <label className='swap swap-flip animate-ping animate-reverse animate-once md:animate-fade'>
 
-                    <input type='checkbox' className='swap-checkbox' /> {/* Hidden checkbox */}
+                    {/* Hidden checkbox */}
+                    <input
+                        onClick={() => ReactGA.event({ category: 'Avatar', action: 'Click', label: 'Avatar Changer' })}
+                        type='checkbox'
+                        className='swap-checkbox'
+                    />
 
                     <div className='avatar swap-off'>
                         <div className='w-48 md:w-60 rounded-full ring ring-primary'>
@@ -47,6 +52,7 @@ export const HeroSection = () => {
                     {/* Social media */}
                     <div className='flex justify-center md:justify-start space-x-4 mt-4'>
                         <a
+                            onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'Github' })}
                             className='btn btn-sm md:btn-md btn-primary hover:scale-110 animate-fade animate-delay-700'
                             href='https://github.com/peenyaa7'
                             rel='noreferrer noopener nofollow'
@@ -55,6 +61,7 @@ export const HeroSection = () => {
                             <IconGithub /> Github
                         </a>
                         <a
+                            onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'LinkedIn' })}
                             className='btn btn-sm md:btn-md btn-primary hover:scale-110 animate-fade animate-delay-500'
                             href='https://www.linkedin.com/in/peenyaa7/'
                             rel='noreferrer noopener nofollow'
@@ -63,6 +70,7 @@ export const HeroSection = () => {
                             <IconLinkedIn /> LinkedIn
                         </a>
                         <a
+                            onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'Gmail' })}
                             className='btn btn-sm md:btn-md btn-primary hover:scale-110 animate-fade animate-delay-700'
                             href='mailto:peenyaa7@gmail.com'
                             rel='noreferrer noopener nofollow'

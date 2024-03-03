@@ -3,6 +3,7 @@ import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
 import { IconGraduationCap } from '../../icons/IconGraduationCap';
 import { IconBriefcase } from '../../icons/IconBriefcase';
 import { Trans, useTranslation } from 'react-i18next';
+import ReactGA from 'react-ga4';
 
 export const ExperienceSection = () => {
 
@@ -20,7 +21,17 @@ export const ExperienceSection = () => {
 
                 <label htmlFor='experience-changer' className='flex cursor-pointer ml-4 gap-2 items-center'>
                     <IconGraduationCap />
-                    <input id='experience-changer' type='checkbox' className='toggle' checked={selected === 'work'} onChange={() => selected === 'work' ? setSelected('education') : setSelected('work')} aria-label='Cambiar entre experiencia laboral y formación académica' />
+                    <input
+                        id='experience-changer'
+                        type='checkbox'
+                        className='toggle'
+                        checked={selected === 'work'}
+                        onChange={() => {
+                            selected === 'work' ? setSelected('education') : setSelected('work');
+                            ReactGA.event({ category: 'Experience', action: 'Change', label: selected === 'work' ? 'Education' : 'Work' })
+                        }}
+                        aria-label='Cambiar entre experiencia laboral y formación académica'
+                    />
                     <IconBriefcase />
                 </label>
 
