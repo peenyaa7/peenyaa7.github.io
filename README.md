@@ -2,8 +2,11 @@
 # Bienvenido a mi Rincón Digital ✨
 ¡Hola! Soy Peña, y este es mi espacio personal en la web. Aquí encontrarás una mezcla única de código, creatividad y un toque de magia digital.
 
+![Open Graph Image](./public/assets/img/og.png)
+
 ## 🎨 Tecnologías Utilizadas
 - HTML/CSS: La base que da vida a mi espacio digital.
+- Tailwind CSS: Añadiendo estilo y personalidad.
 - TypeScript: Agregando interactividad y encanto.
 - React: Potenciando mi creatividad y eficiencia.
 
