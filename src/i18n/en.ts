@@ -69,6 +69,10 @@ export const en = {
         project2: {
             title: "Web Socket Chat",
             description: "A real-time chat created with <strong>Spring Boot + React</strong> and using <strong>WebSocket with STOMP and SockJS</strong>. Includes a <strong>Docker Compose</strong> to run the application in a container."
+        },
+        project3: {
+            title: "Preguntonic",
+            description: "Winner project of the <strong>VI Devathon</strong> organized by <strong>programación-es</strong> and positively evaluated by several Dev Streamers. It consists of a real-time quiz game, with a <strong>backend in Spring Boot</strong> and a <strong>frontend in Angular</strong> that allows you to play in <strong>real-time</strong> with your friends."
         }
     },
     technologies: {

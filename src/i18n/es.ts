@@ -77,6 +77,10 @@ export const es = {
             title: 'Web Socket Chat',
             description: 'Un chat en tiempo real creado con <strong>Spring Boot + React</strong> y utilizando <strong>WebSocket con STOMP y SockJS</strong>. Se incluye un <strong>Docker Compose</strong> para ejecutar la aplicación en un contenedor.'
         },
+        project3: {
+            title: 'Preguntonic',
+            description: 'Proyecto ganador de la <strong>VI Devathon</strong> organizada por <strong>programación-es</strong> y valorado por varios Devs Streamers de forma positiva. Consiste en un juego de preguntas y respuestas en tiempo real, con un <strong>backend en Spring Boot</strong> y un <strong>frontend en Angular</strong> con el que podrás jugar en <strong>tiempo real</strong> con tus amigos.'
+        }
     },
 
     technologies: {
