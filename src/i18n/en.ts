@@ -14,7 +14,6 @@ export const en = {
             },
             education3: {
                 title: "Bachelor's Degree in Computer Engineering",
-                date: "September 2018 - June 2022",
                 where: "Polytechnic University of Jaén",
                 point1: "Advanced programming concepts, <strong>algorithms, and data structures</strong>",
                 point2: "Bilingual program in English-Spanish throughout the course",
@@ -22,25 +21,21 @@ export const en = {
             },
             education2: {
                 title: "B1 English Certification",
-                date: "April 2018 - June 2018",
                 where: "Los Álamos Academy"
             },
             education1: {
                 title: "Higher Level Training Cycle in Network Systems Administration",
-                date: "September 2016 - June 2018",
                 where: "Alfonso XI High School",
                 point1: "Simultaneously completed <strong>Cisco CCNA 1 and 2</strong> courses",
                 point2: "Administration of Windows and Linux operating systems",
                 point3: "Web application development with HTML, CSS, JS, and PHP",
                 point4: "Server administration with <strong>Linux</strong>",
-                description: "At this point, I confirmed the passion I felt for IT and technology."
+                description1: "At this point, I confirmed the passion I felt for IT and technology."
             }
         },
         work: {
             work3: {
                 title: 'Backend Software Engineer',
-                date: 'August 2024 - Present',
-                company: 'Novatec Consulting',
                 point1: 'Maintenance of microservices written in <strong>Spring Boot</strong>',
                 point2: 'Cluster management in <strong>Kubernetes</strong> with <strong>k9s</strong>',
                 point3: 'CI/CD with <strong>Bitbucket</strong>',
@@ -48,8 +43,6 @@ export const en = {
             },
             work2: {
                 title: "Full Stack Developer & DevOps",
-                date: "August 2021 - August 2024",
-                company: "Videocar Analytics",
                 point1: "Team leader on software projects related to intelligent vision",
                 point2: "Development of <strong>SaaS</strong> and on-premise applications with <strong>React</strong> and <strong>Spring Boot</strong>",
                 point3: "Implementation of CI/CD with <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>Github Actions</strong> on <strong>IBM Cloud</strong>",
@@ -61,8 +54,6 @@ export const en = {
             },
             work1: {
                 title: "DevOps",
-                date: "March 2018 - June 2018",
-                company: "Best Secret",
                 point1: "Automation of processes with <strong>Ansible</strong>",
                 point2: "Unified workflows through the <strong>DevOps culture</strong>",
                 point3: "Management of the internal network with Mikrotik"

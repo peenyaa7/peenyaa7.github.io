@@ -16,7 +16,6 @@ export const es = {
             },
             education3: {
                 title: 'Grado en Ingeniería Informática',
-                date: '2018 Septiembre - 2022 Junio',
                 where: 'Universidad Politécnica Superior de Jaén',
                 point1: 'Conceptos de programación avanzados, <strong>algoritmia y estructuras de datos</strong>',
                 point2: 'Programa <strong>bilingüe</strong> inglés-español durante toda la carrera',
@@ -24,18 +23,16 @@ export const es = {
             },
             education2: {
                 title: 'Certificación B1 Inglés',
-                date: '2018 Abril - 2018 Junio',
                 where: 'Academia Los Álamos',
             },
             education1: {
                 title: 'CFGS Administración de Sistemas Informáticos en Red',
-                date: '2016 Septiembre - 2018 Junio',
                 where: 'IES Alfonso XI',
                 point1: 'Cursé de forma paralela los cursos de <strong>Cisco CCNA 1 y 2</strong>',
                 point2: 'Administración de sistemas operativos Windows y Linux',
                 point3: 'Desarrollo de aplicaciones web con HTML, CSS, JS y PHP',
                 point4: 'Administración de servidores con <strong>Linux</strong>',
-                description: 'En este punto confirmé la pasión que sentía por la informática y la tecnología',
+                description1: 'En este punto confirmé la pasión que sentía por la informática y la tecnología',
             },
         },
 
@@ -44,8 +41,6 @@ export const es = {
             // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
             work3: {
                 title: 'Backend Software Engineer',
-                date: '2024 Agosto - Actualmente',
-                company: 'Novatec Consulting',
                 point1: 'Mantenimiento de microservicios escritos en <strong>Spring Boot</strong>',
                 point2: 'Gestión de clústeres en <strong>Kubernetes</strong> con <strong>k9s</strong>',
                 point3: 'CI/CD con <strong>Bitbucket</strong>',
@@ -53,8 +48,6 @@ export const es = {
             },
             work2: {
                 title: 'Full Stack Developer & DevOps',
-                date: '2021 Agosto - 2024 Agosto',
-                company: 'Videocar Analytics',
                 point1: 'Líder de equipo en proyectos de software relacionados con la visión inteligente',
                 point2: 'Desarrollo de aplicaciones <strong>SaaS</strong> y on-premise con <strong>React</strong> y <strong>Spring Boot</strong>',
                 point3: 'Implantación de CI/CD con <strong>Docker</strong>, <strong>Kubernetes</strong> y <strong>Github Actions</strong> en <strong>IBM Cloud</strong>',
@@ -66,8 +59,6 @@ export const es = {
             },
             work1: {
                 title: 'DevOps',
-                date: '2018 Marzo - 2018 Junio',
-                company: 'Best Secret',
                 point1: 'Automatización de procesos con <strong>Ansible</strong>',
                 point2: 'Unificación de flujos de trabajo a través de la <strong>cultura DevOps</strong>',
                 point3: 'Gestión de la red interna con Mikrotik',
