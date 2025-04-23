@@ -42,26 +42,22 @@ export const ExperienceSection = () => {
                 {
                     selected === 'work' ? (<>
 
-                        {/* Work 1 */}
+                        {/* Work 3 */}
                         <li>
                             <div className="timeline-middle">
                                 <IconBriefcase />
                             </div>
                             <div className="timeline-end mb-10">
-                                <time className="font-mono"><Trans i18nKey='experience.work.work1.date' /></time>
+                                <time className="font-mono"><Trans i18nKey='experience.work.work3.date' /></time>
                                 <div className="text-lg font-black text-primary">
-                                    <Trans i18nKey='experience.work.work1.title' />
-                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.work.work1.company' /></span>
+                                    <Trans i18nKey='experience.work.work3.title' />
+                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.work.work3.company' /></span>
                                 </div>
                                 <ul className='list-disc pl-5'>
-                                    <li><Trans i18nKey='experience.work.work1.point1' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point2' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point3' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point4' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point5' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point6' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point7' /></li>
-                                    <li><Trans i18nKey='experience.work.work1.point8' /></li>
+                                    <li><Trans i18nKey='experience.work.work3.point1' /></li>
+                                    <li><Trans i18nKey='experience.work.work3.point2' /></li>
+                                    <li><Trans i18nKey='experience.work.work3.point3' /></li>
+                                    <li><Trans i18nKey='experience.work.work3.point4' /></li>
                                 </ul>
                             </div>
                             <hr className='bg-primary' />
@@ -69,7 +65,6 @@ export const ExperienceSection = () => {
 
                         {/* Work 2 */}
                         <li>
-                            <hr className='bg-primary' />
                             <div className="timeline-middle">
                                 <IconBriefcase />
                             </div>
@@ -83,13 +78,39 @@ export const ExperienceSection = () => {
                                     <li><Trans i18nKey='experience.work.work2.point1' /></li>
                                     <li><Trans i18nKey='experience.work.work2.point2' /></li>
                                     <li><Trans i18nKey='experience.work.work2.point3' /></li>
+                                    <li><Trans i18nKey='experience.work.work2.point4' /></li>
+                                    <li><Trans i18nKey='experience.work.work2.point5' /></li>
+                                    <li><Trans i18nKey='experience.work.work2.point6' /></li>
+                                    <li><Trans i18nKey='experience.work.work2.point7' /></li>
+                                    <li><Trans i18nKey='experience.work.work2.point8' /></li>
+                                </ul>
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+
+                        {/* Work 1 */}
+                        <li>
+                            <hr className='bg-primary' />
+                            <div className="timeline-middle">
+                                <IconBriefcase />
+                            </div>
+                            <div className="timeline-end mb-10">
+                                <time className="font-mono"><Trans i18nKey='experience.work.work1.date' /></time>
+                                <div className="text-lg font-black text-primary">
+                                    <Trans i18nKey='experience.work.work1.title' />
+                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.work.work1.company' /></span>
+                                </div>
+                                <ul className='list-disc pl-5'>
+                                    <li><Trans i18nKey='experience.work.work1.point1' /></li>
+                                    <li><Trans i18nKey='experience.work.work1.point2' /></li>
+                                    <li><Trans i18nKey='experience.work.work1.point3' /></li>
                                 </ul>
                             </div>
                         </li>
 
                     </>) : (<>
 
-                        {/* Education 1 */}
+                        {/* Education 4 */}
                         <li>
                             <div className="timeline-middle">
                                 <IconGraduationCap />
@@ -97,32 +118,11 @@ export const ExperienceSection = () => {
                             <div className="timeline-end mb-10">
                                 <time className="font-mono flex items-center gap-2"> <span className="loading loading-infinity loading-md"></span> </time>
                                 <div className="text-lg font-black text-primary">
-                                    <Trans i18nKey='experience.education.education1.title' />
+                                    <Trans i18nKey='experience.education.education4.title' />
                                     
                                 </div>
-                                <p><Trans i18nKey='experience.education.education1.description1' /></p>
-                                <p><Trans i18nKey='experience.education.education1.description2' /></p>
-                            </div>
-                            <hr className='bg-primary' />
-                        </li>
-
-                        {/* Education 2 */}
-                        <li>
-                            <hr className='bg-primary' />
-                            <div className="timeline-middle">
-                                <IconGraduationCap />
-                            </div>
-                            <div className="timeline-end mb-10">
-                                <time className="font-mono"><Trans i18nKey='experience.education.education2.date' /></time>
-                                <div className="text-lg font-black text-primary">
-                                    <Trans i18nKey='experience.education.education2.title' />
-                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.education.education2.where' /></span>
-                                </div>
-                                <ul className='list-disc pl-5'>
-                                    <li><Trans i18nKey='experience.education.education2.point1' /></li>
-                                    <li><Trans i18nKey='experience.education.education2.point2' /></li>
-                                    <li><Trans i18nKey='experience.education.education2.point3' /></li>
-                                </ul>
+                                <p><Trans i18nKey='experience.education.education4.description1' /></p>
+                                <p><Trans i18nKey='experience.education.education4.description2' /></p>
                             </div>
                             <hr className='bg-primary' />
                         </li>
@@ -139,29 +139,50 @@ export const ExperienceSection = () => {
                                     <Trans i18nKey='experience.education.education3.title' />
                                     <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.education.education3.where' /></span>
                                 </div>
+                                <ul className='list-disc pl-5'>
+                                    <li><Trans i18nKey='experience.education.education3.point1' /></li>
+                                    <li><Trans i18nKey='experience.education.education3.point2' /></li>
+                                    <li><Trans i18nKey='experience.education.education3.point3' /></li>
+                                </ul>
                             </div>
                             <hr className='bg-primary' />
                         </li>
 
-                        {/* Education 4 */}
+                        {/* Education 2 */}
                         <li>
                             <hr className='bg-primary' />
                             <div className="timeline-middle">
                                 <IconGraduationCap />
                             </div>
                             <div className="timeline-end mb-10">
-                                <time className="font-mono"><Trans i18nKey='experience.education.education4.date' /></time>
+                                <time className="font-mono"><Trans i18nKey='experience.education.education2.date' /></time>
                                 <div className="text-lg font-black text-primary">
-                                    <Trans i18nKey='experience.education.education4.title' />
-                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.education.education4.where' /></span>
+                                    <Trans i18nKey='experience.education.education2.title' />
+                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.education.education3.where' /></span>
+                                </div>
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+
+                        {/* Education 1 */}
+                        <li>
+                            <hr className='bg-primary' />
+                            <div className="timeline-middle">
+                                <IconGraduationCap />
+                            </div>
+                            <div className="timeline-end mb-10">
+                                <time className="font-mono"><Trans i18nKey='experience.education.education1.date' /></time>
+                                <div className="text-lg font-black text-primary">
+                                    <Trans i18nKey='experience.education.education1.title' />
+                                    <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey='experience.education.education1.where' /></span>
                                 </div>
                                 <ul className='list-disc pl-5'>
-                                    <li><Trans i18nKey='experience.education.education4.point1' /></li>
-                                    <li><Trans i18nKey='experience.education.education4.point2' /></li>
-                                    <li><Trans i18nKey='experience.education.education4.point3' /></li>
-                                    <li><Trans i18nKey='experience.education.education4.point4' /></li>
+                                    <li><Trans i18nKey='experience.education.education1.point1' /></li>
+                                    <li><Trans i18nKey='experience.education.education1.point2' /></li>
+                                    <li><Trans i18nKey='experience.education.education1.point3' /></li>
+                                    <li><Trans i18nKey='experience.education.education1.point4' /></li>
                                 </ul>
-                                <p><Trans i18nKey='experience.education.education4.description' /></p>
+                                <p><Trans i18nKey='experience.education.education1.description' /></p>
                             </div>
                         </li>
                     </>)

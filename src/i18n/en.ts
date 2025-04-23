@@ -7,12 +7,12 @@ export const en = {
     experience: {
         title: "Experience",
         education: {
-            education1: {
+            education4: {
                 title: "Self-Taught Education",
                 description1: "I am always in <strong>constant learning</strong>, both professionally and personally. I enjoy researching new technologies, <strong>methodologies</strong> of work, and <strong>best practices</strong> in software development.",
                 description2: "I feel <strong>curious</strong> about every part of the software development process, from project management to monitoring after deployment."
             },
-            education2: {
+            education3: {
                 title: "Bachelor's Degree in Computer Engineering",
                 date: "September 2018 - June 2022",
                 where: "Polytechnic University of Jaén",
@@ -20,12 +20,12 @@ export const en = {
                 point2: "Bilingual program in English-Spanish throughout the course",
                 point3: "Awarded <strong>Best Bachelor's Thesis (Final Project)</strong> with honors"
             },
-            education3: {
+            education2: {
                 title: "B1 English Certification",
                 date: "April 2018 - June 2018",
                 where: "Los Álamos Academy"
             },
-            education4: {
+            education1: {
                 title: "Higher Level Training Cycle in Network Systems Administration",
                 date: "September 2016 - June 2018",
                 where: "Alfonso XI High School",
@@ -37,9 +37,18 @@ export const en = {
             }
         },
         work: {
-            work1: {
+            work3: {
+                title: 'Backend Software Engineer',
+                date: 'August 2024 - Present',
+                company: 'Novatec Consulting',
+                point1: 'Maintenance of microservices written in <strong>Spring Boot</strong>',
+                point2: 'Cluster management in <strong>Kubernetes</strong> with <strong>k9s</strong>',
+                point3: 'CI/CD with <strong>Bitbucket</strong>',
+                point4: 'International teamwork',
+            },
+            work2: {
                 title: "Full Stack Developer & DevOps",
-                date: "August 2021 - Present",
+                date: "August 2021 - August 2024",
                 company: "Videocar Analytics",
                 point1: "Team leader on software projects related to intelligent vision",
                 point2: "Development of <strong>SaaS</strong> and on-premise applications with <strong>React</strong> and <strong>Spring Boot</strong>",
@@ -50,7 +59,7 @@ export const en = {
                 point7: "Programming <strong>ESP32</strong> microcontrollers with PlatformIO for Bluetooth Low Energy (BLE) communication",
                 point8: "Acquired certifications from CCTV manufacturers (Mobotix, Commend, Milesight)"
             },
-            work2: {
+            work1: {
                 title: "DevOps",
                 date: "March 2018 - June 2018",
                 company: "Best Secret",

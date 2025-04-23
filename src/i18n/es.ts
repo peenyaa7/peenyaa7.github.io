@@ -8,13 +8,13 @@ export const es = {
     experience: {
         title: 'Experiencia',
         education: {
-            // Orden en que se mostrarán los elementos
-            education1: {
+            // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
+            education4: {
                 title: 'Formación autodidacta',
                 description1: 'Siempre estoy en <strong>constante aprendizaje</strong>, tanto en el ámbito profesional como en el personal. Me gusta investigar sobre nuevas tecnologías, <strong>metodologías</strong> de trabajo y <strong>buenas prácticas</strong> en el desarrollo de software.',
                 description2: 'Siento <strong>curiosidad</strong> de cada parte del proceso de desarrollo de software, desde la gestión de proyectos hasta la monitorización tras la puesta en producción.'
             },
-            education2: {
+            education3: {
                 title: 'Grado en Ingeniería Informática',
                 date: '2018 Septiembre - 2022 Junio',
                 where: 'Universidad Politécnica Superior de Jaén',
@@ -22,12 +22,12 @@ export const es = {
                 point2: 'Programa <strong>bilingüe</strong> inglés-español durante toda la carrera',
                 point3: 'Promoción a <strong>mejor TFG (Trabajo Fin de Grado)</strong> con matrícula de honor'
             },
-            education3: {
+            education2: {
                 title: 'Certificación B1 Inglés',
                 date: '2018 Abril - 2018 Junio',
                 where: 'Academia Los Álamos',
             },
-            education4: {
+            education1: {
                 title: 'CFGS Administración de Sistemas Informáticos en Red',
                 date: '2016 Septiembre - 2018 Junio',
                 where: 'IES Alfonso XI',
@@ -41,10 +41,19 @@ export const es = {
 
         work: {
 
-            // Orden en que se mostrarán los elementos
-            work1: {
+            // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
+            work3: {
+                title: 'Backend Software Engineer',
+                date: '2024 Agosto - Actualmente',
+                company: 'Novatec Consulting',
+                point1: 'Mantenimiento de microservicios escritos en <strong>Spring Boot</strong>',
+                point2: 'Gestión de clústeres en <strong>Kubernetes</strong> con <strong>k9s</strong>',
+                point3: 'CI/CD con <strong>Bitbucket</strong>',
+                point4: 'Trabajo en equipo internacional',
+            },
+            work2: {
                 title: 'Full Stack Developer & DevOps',
-                date: '2021 Agosto - Actualmente',
+                date: '2021 Agosto - 2024 Agosto',
                 company: 'Videocar Analytics',
                 point1: 'Líder de equipo en proyectos de software relacionados con la visión inteligente',
                 point2: 'Desarrollo de aplicaciones <strong>SaaS</strong> y on-premise con <strong>React</strong> y <strong>Spring Boot</strong>',
@@ -55,8 +64,7 @@ export const es = {
                 point7: 'Programación de microcontroladores <strong>ESP32</strong> con PlatformIO para comunicación Bluetooth Low Energy (BLE)',
                 point8: 'Certificaciones adquiridas en fabricantes de CCTV (Mobotix, Commend, Milesight)',
             },
-
-            work2: {
+            work1: {
                 title: 'DevOps',
                 date: '2018 Marzo - 2018 Junio',
                 company: 'Best Secret',
