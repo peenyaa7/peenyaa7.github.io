@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next'
 import { IconGithub } from '../../icons/IconGithub';
 import { IconLinkedIn } from '../../icons/IconLinkedIn';
@@ -6,42 +7,60 @@ import ReactGA from 'react-ga4';
 
 export const HeroSection = () => {
 
+    const SECONDS_TO_APPEAR_HINT = 5;
+
+    const [hintVisible, setHintVisible] = useState(false);
+    const [hintClicked, setHintClicked] = useState(false);
+
     useTranslation();
+
+    useEffect(() => { setTimeout(() => setHintVisible(true), SECONDS_TO_APPEAR_HINT * 1000) }, [])
 
     return (
 
         <section id='hero' className='hero min-h-screen max-w-4xl mx-auto'>
 
-            <div className='hero-content text-center md:text-left flex flex-col md:flex-row gap-10'>
+            <div className='hero-content text-center md:text-left flex flex-col md:flex-row gap-5 md:gap-10'>
 
-                {/* Swap Avatar */}
+                <div className='flex flex-col items-center gap-2'>
 
-                <label className='swap swap-flip animate-ping animate-reverse animate-once md:animate-fade'>
+                    {/* Swap Avatar */}
+                    <label className='swap swap-flip animate-ping animate-reverse animate-once md:animate-fade'>
 
-                    {/* Hidden checkbox */}
-                    <input
-                        onClick={() => ReactGA.event({ category: 'Avatar', action: 'Click', label: 'Avatar Changer' })}
-                        type='checkbox'
-                        className='swap-checkbox'
-                    />
+                        {/* Hidden checkbox */}
+                        <input
+                            onClick={() => {
+                                ReactGA.event({ category: 'Avatar', action: 'Click', label: 'Avatar Changer' });
+                                setHintClicked(true);
+                            }}
+                            type='checkbox'
+                            className='swap-checkbox'
+                        />
 
-                    <div className='avatar swap-off'>
-                        <div className='w-48 md:w-60 rounded-full ring ring-primary'>
-                            <img src="assets/img/avatar-1.webp" alt='Avatar de Francisco Javier Peña' />
+                        <div className='avatar swap-off'>
+                            <div className='w-48 md:w-60 rounded-full ring ring-primary'>
+                                <img src="assets/img/avatar-1.webp" alt='Avatar de Francisco Javier Peña' />
+                            </div>
                         </div>
-                    </div>
-                    <div className='avatar swap-on'>
-                        <div className='w-48 md:w-60 rounded-full ring ring-primary'>
-                            <img src="assets/img/avatar-2.webp" alt='Avatar funko pop de Francisco Javier Peña' />
+                        <div className='avatar swap-on'>
+                            <div className='w-48 md:w-60 rounded-full ring ring-primary'>
+                                <img src="assets/img/avatar-2.webp" alt='Avatar funko pop de Francisco Javier Peña' />
+                            </div>
                         </div>
-                    </div>
-                </label>
+                    </label>
+
+                    {/* Hint */}
+                    <small className={`italic text-primary text-opacity-40 ${!hintClicked && hintVisible ? 'animate-ping animate-reverse animate-once' : 'invisible'}`}>
+                        <Trans i18nKey='hero.avatarTip' components={{ u: <u /> }} />
+                    </small>
+
+                </div>
 
 
                 <div className='flex flex-col'>
 
                     {/* Title */}
-                    <p className='text-xs md:text-sm animate-fade animate-delay-1000'>Full Stack Software Engineer | Spring Boot & React</p>
+                    <p className='text-xs md:text-sm animate-fade animate-delay-1000 text-opacity-50'>Full Stack Software Engineer | Spring Boot & React</p>
                     <h1 className='text-4xl md:text-5xl animate-ease-in-out animate-duration-[1200ms] animate-fade-down font-bold text-center md:text-left'>Fco. Javier Peña</h1>
 
                     {/* Description */}

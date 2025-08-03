@@ -3,6 +3,7 @@ export const es = {
     hero: {
         title: '¡Hola!',
         description: 'Soy <strong>autodidacta y curioso</strong>, apasionado por <strong>aprender y compartir</strong> conocimientos. Defiendo el uso de <strong>buenas prácticas y la documentación</strong>. Me encantan los retos y tengo un interés especial en el <strong>desarrollo y arquitectura de software</strong>, así como todo lo que rodea al mundo de la tecnología.',
+        avatarTip: '<u>Tip</u>: Haz click en la imagen 😉',
     },
 
     experience: {

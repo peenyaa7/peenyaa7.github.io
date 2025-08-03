@@ -2,7 +2,8 @@ export const en = {
 
     hero: {
         title: "Hi!",
-        description: "I am <strong>self-taught and curious</strong>, passionate about <strong>learning and sharing</strong> knowledge. I advocate for the use of <strong>best practices and documentation</strong>. I love challenges and have a special interest in <strong>software development and architecture</strong>, as well as everything surrounding the world of technology."
+        description: "I am <strong>self-taught and curious</strong>, passionate about <strong>learning and sharing</strong> knowledge. I advocate for the use of <strong>best practices and documentation</strong>. I love challenges and have a special interest in <strong>software development and architecture</strong>, as well as everything surrounding the world of technology.",
+        avatarTip: '<u>Tip</u>: Click on the image 😉',
     },
     experience: {
         title: "Experience",
