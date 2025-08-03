@@ -13,8 +13,9 @@ export const ExperienceSection = () => {
     const [selected, setSelected] = useState<"work" | "education">('work');
     useTranslation();
 
-    const capitalise = (text: string) => {
-        return text.charAt(0).toUpperCase() + text.slice(1); 
+    const formatDate = (date: Date) => {
+        const dateStr = Intl.DateTimeFormat(i18n.language, { month: 'long', year: 'numeric'}).format(date);
+        return dateStr.charAt(0).toUpperCase() + dateStr.slice(1); // Capitalize date
     }
 
     return (
@@ -52,11 +53,18 @@ export const ExperienceSection = () => {
                         {
                             WORK_EXPERIENCES.map((workExperience, index) =>
                                 <li key={workExperience.titleI18n}>
-                                    <div className="timeline-middle">
+                                    <div className="timeline-middle pb-1">
                                         <IconBriefcase />
                                     </div>
-                                    <div className="timeline-end mb-10">
-                                        <time className="font-mono">{capitalise(Intl.DateTimeFormat(i18n.language, { month: 'long', year: 'numeric'}).format(workExperience.startDate))} - {workExperience.endDate ? capitalise(Intl.DateTimeFormat(i18n.language, { month: 'long', year: 'numeric'}).format(workExperience.endDate)) : <span className="loading loading-infinity loading-md pt-1"></span>}</time>
+                                    <div className="timeline-end mb-5">
+                                        <time className="font-mono flex gap-2">
+                                            <span>{formatDate(workExperience.startDate)}</span>
+                                            <span>-</span>
+                                            {workExperience.endDate ?
+                                                <span>{formatDate(workExperience.endDate)}</span> :
+                                                <span className="loading loading-infinity loading-md"></span>
+                                            }
+                                        </time>
                                         <div className="text-lg font-black text-primary">
                                             <Trans i18nKey={workExperience.titleI18n} />
                                             <span className="text-sm font-normal text-neutral-content"> | <Trans i18nKey={workExperience.company} /></span>
@@ -77,16 +85,25 @@ export const ExperienceSection = () => {
                         {
                             EDUCATION_EXPERIENCES.map((educationExperience, index) =>       
                                 <li key={educationExperience.titleI18n}>
-                                    <div className="timeline-middle">
+                                    <div className="timeline-middle pb-1">
                                         <IconGraduationCap />
                                     </div>
-                                    <div className="timeline-end mb-10">
-
-                                        {
-                                            educationExperience.forever ?
-                                            <time className="font-mono flex items-center gap-2"> <span className="loading loading-infinity loading-md"></span> </time> :
-                                            <time className="font-mono">{capitalise(Intl.DateTimeFormat(i18n.language, { month: 'long', year: 'numeric'}).format(educationExperience.startDate))} - {educationExperience.endDate ? capitalise(Intl.DateTimeFormat(i18n.language, { month: 'long', year: 'numeric'}).format(educationExperience.endDate)) : <span className="loading loading-infinity loading-md pt-1"></span>}</time>
-                                        }
+                                    <div className="timeline-end mb-5">
+                                        <time className="font-mono flex gap-2">
+                                            {educationExperience.forever ?
+                                                <span className="loading loading-infinity loading-md"></span> :
+                                                <>
+                                                    <span>{formatDate(educationExperience.startDate)}</span>
+                                                    <span>-</span>
+                                                    <span>
+                                                        {educationExperience.endDate ?
+                                                            <span>{formatDate(educationExperience.endDate)}</span> :
+                                                            <span className="loading loading-infinity loading-md"></span>
+                                                        }
+                                                    </span>
+                                                </>
+                                            }
+                                        </time>
 
 
                                         <div className="text-lg font-black text-primary">
