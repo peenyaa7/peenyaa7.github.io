@@ -14,12 +14,10 @@ export const Navbar = () => {
 
         <div className="w-full navbar bg-base-300 fixed top-0 z-10 shadow-lg p-0 gap-1 px-2">
 
-
             <div className="flex-1 gap-1">
-                <kbd className='kbd'>P</kbd>
-                <kbd className='kbd'>E</kbd>
-                <kbd className='kbd'>Ñ</kbd>
-                <kbd className='kbd'>A</kbd>
+                {['P','E','Ñ','A'].map((letter) =>
+                    <kbd key={letter} className='kbd'>{letter}</kbd>
+                )}
             </div>
 
             <div className="flex-none hidden md:block">
