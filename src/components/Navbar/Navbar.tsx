@@ -47,8 +47,8 @@ export const Navbar = () => {
                     onClick={() => ReactGA.event({ category: 'Theme', action: 'Click', label: 'Theme Changer' })}
                 />
 
-                <IconSun className='swap-on fill-current' />
-                <IconMoon className='swap-off fill-current' />
+                <IconSun className='swap-off fill-current' />
+                <IconMoon className='swap-on fill-current' />
 
             </label>
 
