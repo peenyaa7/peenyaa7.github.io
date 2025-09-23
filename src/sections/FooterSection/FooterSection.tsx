@@ -5,7 +5,7 @@ import ReactGA from 'react-ga4'
 
 export const FooterSection = () => {
     return (
-        <footer className="footer footer-center p-4 bg-neutral text-neutral-content mt-12">
+        <footer className="footer footer-center p-4 bg-base-300 mt-12">
             <aside className="flex items-center grid-flow-col p-2 gap-10">
                 <a
                     onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'Github' })}
