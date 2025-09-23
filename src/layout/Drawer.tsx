@@ -7,9 +7,10 @@ import { FooterSection } from '../sections/FooterSection/FooterSection'
 import { Trans, useTranslation } from 'react-i18next'
 import { IconRocket } from '../icons/IconRocket'
 import { IconBriefcase } from '../icons/IconBriefcase'
+import { IconNewspaper } from '../icons/IconNewspaper'
 import { IconHandPeace } from '../icons/IconHandPeace'
-import ReactGA from 'react-ga4'
 import { useEffect } from 'react'
+import ReactGA from 'react-ga4'
 
 export const Drawer = () => {
 
@@ -63,7 +64,12 @@ export const Drawer = () => {
                                 <Trans i18nKey='experience.title' />
                             </a>
                         </li>
-                        {/* <li><a href='#'>Blog</a></li> */}
+                        <li>
+                            <a href='https://blog.peenyaa.dev' className='btn btn-outline btn-accent'>
+                                <IconNewspaper />
+                                <Trans i18nKey='blog.title' />
+                            </a>
+                        </li>
                     </ul>
                     
                     <p className='text-center text-neutral-content pb-4'>

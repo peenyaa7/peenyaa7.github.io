@@ -8,8 +8,7 @@ export const es = {
 
     experience: {
         title: 'Experiencia',
-        education: {
-            // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
+        education: { // Orden en que se mostrarán los elementos (1: oldest -> 4: newer)
             education4: {
                 title: 'Formación autodidacta',
                 description1: 'Siempre estoy en <strong>constante aprendizaje</strong>, tanto en el ámbito profesional como en el personal. Me gusta investigar sobre nuevas tecnologías, <strong>metodologías</strong> de trabajo y <strong>buenas prácticas</strong> en el desarrollo de software.',
@@ -37,9 +36,7 @@ export const es = {
             },
         },
 
-        work: {
-
-            // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
+        work: { // Orden en que se mostrarán los elementos (1: oldest -> 3: newer)
             work3: {
                 title: 'Backend Software Engineer',
                 point1: 'Mantenimiento de microservicios escritos en <strong>Spring Boot</strong>',
@@ -64,7 +61,7 @@ export const es = {
                 point2: 'Unificación de flujos de trabajo a través de la <strong>cultura DevOps</strong>',
                 point3: 'Gestión de la red interna con Mikrotik',
             },
-        }
+        },
     },
 
     projects: {
@@ -80,12 +77,14 @@ export const es = {
         project3: {
             title: 'Preguntonic',
             description: 'Proyecto ganador de la <strong>VI Devathon</strong> organizada por <strong>programación-es</strong> y valorado por varios Devs Streamers de forma positiva. Consiste en un juego de preguntas y respuestas en tiempo real, con un <strong>backend en Spring Boot</strong> y un <strong>frontend en Angular</strong> con el que podrás jugar en <strong>tiempo real</strong> con tus amigos.'
-        }
+        },
     },
 
     technologies: {
         title: 'Tecnologías',
     },
 
-
+    blog: {
+        title: "Blog"
+    },
 }

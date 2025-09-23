@@ -5,9 +5,10 @@ export const en = {
         description: "I am <strong>self-taught and curious</strong>, passionate about <strong>learning and sharing</strong> knowledge. I advocate for the use of <strong>best practices and documentation</strong>. I love challenges and have a special interest in <strong>software development and architecture</strong>, as well as everything surrounding the world of technology.",
         avatarTip: '<u>Tip</u>: Click on the image 😉',
     },
+
     experience: {
         title: "Experience",
-        education: {
+        education: { // Order (1: oldest -> 4: newer)
             education4: {
                 title: "Self-Taught Education",
                 description1: "I am always in <strong>constant learning</strong>, both professionally and personally. I enjoy researching new technologies, <strong>methodologies</strong> of work, and <strong>best practices</strong> in software development.",
@@ -32,9 +33,10 @@ export const en = {
                 point3: "Web application development with HTML, CSS, JS, and PHP",
                 point4: "Server administration with <strong>Linux</strong>",
                 description1: "At this point, I confirmed the passion I felt for IT and technology."
-            }
+            },
         },
-        work: {
+
+        work: { // Order (1: oldest -> 3: newer)
             work3: {
                 title: 'Backend Software Engineer',
                 point1: 'Maintenance of microservices written in <strong>Spring Boot</strong>',
@@ -58,9 +60,10 @@ export const en = {
                 point1: "Automation of processes with <strong>Ansible</strong>",
                 point2: "Unified workflows through the <strong>DevOps culture</strong>",
                 point3: "Management of the internal network with Mikrotik"
-            }
-        }
+            },
+        },
     },
+
     projects: {
         title: "Projects",
         project1: {
@@ -74,9 +77,14 @@ export const en = {
         project3: {
             title: "Preguntonic",
             description: "Winner project of the <strong>VI Devathon</strong> organized by <strong>programación-es</strong> and positively evaluated by several Dev Streamers. It consists of a real-time quiz game, with a <strong>backend in Spring Boot</strong> and a <strong>frontend in Angular</strong> that allows you to play in <strong>real-time</strong> with your friends."
-        }
+        },
     },
+
     technologies: {
         title: "Technologies"
-    }
+    },
+    
+    blog: {
+        title: "Blog"
+    },
 }

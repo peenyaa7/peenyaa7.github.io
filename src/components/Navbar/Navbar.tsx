@@ -27,11 +27,9 @@ export const Navbar = () => {
 
                     <li><a href='#projects' className="btn btn-ghost"><Trans i18nKey='projects.title' /></a></li>
                     <li><a href='#experience' className="btn btn-ghost"><Trans i18nKey='experience.title' /></a></li>
-                    {/* <li><a href='#' className="btn btn-ghost">Blog</a></li> */}
+                    <li><a href='https://blog.peenyaa.dev' className="btn btn-ghost text-accent"><Trans i18nKey='blog.title' /></a></li>
 
                 </ul>
-
-
             </div>
 
             {/* Theme */}
