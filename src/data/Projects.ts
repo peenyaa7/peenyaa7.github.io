@@ -29,6 +29,7 @@ export const PROJECTS: Project[] = [
             github: "https://github.com/peenyaa7/PreguntonicBackend",
             demo: "https://preguntonic-test-1.netlify.app/home",
             documentation: "https://peenyaa.dev/PreguntonicDocs/",
+            video: "https://youtu.be/xVj-wqKsRiQ?si=qBYWleAzcGDlAuUC&t=2560"
         },
         tags: ["Spring Boot", "Angular", "Web Sockets", "STOMP", "SockJS", "Docker", "MKDocs"],
         thumbnail: "assets/img/projects/project3-thumbnail.png",

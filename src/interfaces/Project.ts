@@ -9,6 +9,7 @@ export interface Project {
         github?: string;
         demo?: string;
         documentation?: string;
+        video?: string;
     },
     tags: string[];
     thumbnail: string;
