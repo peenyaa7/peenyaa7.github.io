@@ -9,10 +9,14 @@ export const es = {
     experience: {
         title: 'Experiencia',
         education: { // Orden en que se mostrarán los elementos (1: oldest -> 4: newer)
-            education4: {
+            education0: {
                 title: 'Formación autodidacta',
                 description1: 'Siempre estoy en <strong>constante aprendizaje</strong>, tanto en el ámbito profesional como en el personal. Me gusta investigar sobre nuevas tecnologías, <strong>metodologías</strong> de trabajo y <strong>buenas prácticas</strong> en el desarrollo de software.',
                 description2: 'Siento <strong>curiosidad</strong> de cada parte del proceso de desarrollo de software, desde la gestión de proyectos hasta la monitorización tras la puesta en producción.'
+            },
+            education4: {
+                title: "Certificación B2-C Inglés",
+                where: "Aptis ESOL"
             },
             education3: {
                 title: 'Grado en Ingeniería Informática',
@@ -23,7 +27,7 @@ export const es = {
             },
             education2: {
                 title: 'Certificación B1 Inglés',
-                where: 'Academia Los Álamos',
+                where: 'Trinity College',
             },
             education1: {
                 title: 'CFGS Administración de Sistemas Informáticos en Red',

@@ -2,19 +2,28 @@ import { EducationExperience } from "../interfaces/EducationExperience";
 
 export const EDUCATION_EXPERIENCES: EducationExperience[] = [
 
-    {
-        titleI18n: "experience.education.education4.title",
+    { // Self-taught education 
+        titleI18n: "experience.education.education0.title",
         startDate: new Date(),
         endDate: undefined, // present
         forever: true,
         institutionI18n: undefined,
         pointsI18n: [],
         paragraphsI18n: [
-            "experience.education.education4.description1",
-            "experience.education.education4.description2"
+            "experience.education.education0.description1",
+            "experience.education.education0.description2"
         ]
     },
-    {
+    { // B2-C English certificate
+        titleI18n: "experience.education.education4.title",
+        startDate: new Date("2023-02-15"),
+        endDate: new Date("2024-04-25"),
+        forever: false,
+        institutionI18n: "experience.education.education4.where",
+        pointsI18n: [],
+        paragraphsI18n: []
+    },
+    { // Computer Engineering Degree
         titleI18n: "experience.education.education3.title",
         startDate: new Date("2018-09-01"),
         endDate: new Date("2022-06-01"),
@@ -27,7 +36,7 @@ export const EDUCATION_EXPERIENCES: EducationExperience[] = [
         ],
         paragraphsI18n: []
     },
-    {
+    { // B1 English certificate
         titleI18n: "experience.education.education2.title",
         startDate: new Date("2018-04-01"),
         endDate: new Date("2018-06-01"),
@@ -36,7 +45,7 @@ export const EDUCATION_EXPERIENCES: EducationExperience[] = [
         pointsI18n: [],
         paragraphsI18n: []
     },
-    {
+    { // ASIR
         titleI18n: "experience.education.education1.title",
         startDate: new Date("2016-09-01"),
         endDate: new Date("2018-06-01"),

@@ -9,10 +9,14 @@ export const en = {
     experience: {
         title: "Experience",
         education: { // Order (1: oldest -> 4: newer)
-            education4: {
+            education0: {
                 title: "Self-Taught Education",
                 description1: "I am always in <strong>constant learning</strong>, both professionally and personally. I enjoy researching new technologies, <strong>methodologies</strong> of work, and <strong>best practices</strong> in software development.",
                 description2: "I feel <strong>curious</strong> about every part of the software development process, from project management to monitoring after deployment."
+            },
+            education4: {
+                title: "B2-C English Certification",
+                where: "Aptis ESOL"
             },
             education3: {
                 title: "Bachelor's Degree in Computer Engineering",
@@ -23,7 +27,7 @@ export const en = {
             },
             education2: {
                 title: "B1 English Certification",
-                where: "Los Álamos Academy"
+                where: "Trinity College"
             },
             education1: {
                 title: "Higher Level Training Cycle in Network Systems Administration",
