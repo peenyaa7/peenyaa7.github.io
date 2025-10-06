@@ -6,7 +6,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         titleI18n: "experience.work.work3.title",
         startDate: new Date("2024-08-26"),
         endDate: undefined, // present
-        company: "Novatec Consulting",
+        company: "Novatec Consulting & CGI",
         pointsI18n: [
             "experience.work.work3.point1",
             "experience.work.work3.point2",
