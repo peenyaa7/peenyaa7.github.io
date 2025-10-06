@@ -20,6 +20,12 @@ export const Drawer = () => {
         ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
     }, []);
 
+    const toggleDrawer = () => {
+        const checkbox = document.getElementById("drawer-toggler-button") as HTMLInputElement | null;
+        if (checkbox)
+            checkbox.checked = !checkbox.checked;
+    }
+
     return (
         <div className='drawer drawer-end'>
 
@@ -47,25 +53,25 @@ export const Drawer = () => {
                     <ul className="menu flex-1 p-4 w-60 gap-2">
                         {/* Sidebar content here */}
                         <li>
-                            <a href='#hero' className='btn btn-outline btn-primary'>
+                            <a href='#hero' onClick={() => toggleDrawer() } className='btn btn-outline btn-primary'>
                                 <IconHandPeace />
                                 <Trans i18nKey='hero.title' />
                             </a>
                         </li>
                         <li>
-                            <a href='#projects' className='btn btn-outline btn-primary'>
+                            <a href='#projects' onClick={() => toggleDrawer() } className='btn btn-outline btn-primary'>
                                 <IconRocket />
                                 <Trans i18nKey='projects.title' />
                             </a>
                         </li>
                         <li>
-                            <a href='#experience' className='btn btn-outline btn-primary'>
+                            <a href='#experience' onClick={() => toggleDrawer() } className='btn btn-outline btn-primary'>
                                 <IconBriefcase />
                                 <Trans i18nKey='experience.title' />
                             </a>
                         </li>
                         <li>
-                            <a href='https://blog.peenyaa.dev' className='btn btn-outline btn-accent'>
+                            <a href='https://blog.peenyaa.dev' onClick={() => toggleDrawer() } className='btn btn-outline btn-accent'>
                                 <IconNewspaper />
                                 <Trans i18nKey='blog.title' />
                             </a>
