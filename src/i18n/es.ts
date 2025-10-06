@@ -87,4 +87,8 @@ export const es = {
     blog: {
         title: "Blog"
     },
+
+    drawer: {
+        madeWithLove: 'Hecho con ♥ por'
+    }
 }

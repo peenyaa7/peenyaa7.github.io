@@ -73,7 +73,7 @@ export const Drawer = () => {
                     </ul>
                     
                     <p className='text-center text-neutral-content pb-4'>
-                        Hecho con <span className='text-red-600'>&hearts;</span> por <a href='https://github.com/peenyaa7' className='link link-primary' target='_blank' rel='noreferrer noopener nofollow'>Peña</a>
+                        <Trans i18nKey='drawer.madeWithLove' /><a href='https://github.com/peenyaa7' className='link link-primary ml-1' target='_blank' rel='noreferrer noopener nofollow'>Peña</a>
                     </p>
 
                 </div>
