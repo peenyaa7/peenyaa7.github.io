@@ -1,14 +1,14 @@
 import { IconGithub } from '../../icons/IconGithub'
 import { IconLinkedIn } from '../../icons/IconLinkedIn'
 import { IconGmail } from '../../icons/IconGmail'
-import ReactGA from 'react-ga4'
+import { AnalyticsEvent, registryEvent } from '../../services/AnalyticsService'
 
 export const FooterSection = () => {
     return (
         <footer className="footer footer-center p-4 bg-base-300 mt-12">
             <aside className="flex items-center grid-flow-col p-2 gap-10">
                 <a
-                    onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'Github' })}
+                    onClick={() => registryEvent(AnalyticsEvent.GithubClick) }
                     className='hover:scale-125 transition-transform'
                     href='https://github.com/peenyaa7'
                     target='_blank'
@@ -18,7 +18,7 @@ export const FooterSection = () => {
                     <IconGithub />
                 </a>
                 <a
-                    onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'LinkedIn' })}
+                    onClick={() => registryEvent(AnalyticsEvent.LinkedinClick) }
                     className='hover:scale-125 transition-transform'
                     href='https://www.linkedin.com/in/peenyaa7/'
                     target='_blank'
@@ -28,7 +28,7 @@ export const FooterSection = () => {
                     <IconLinkedIn />
                 </a>
                 <a
-                    onClick={() => ReactGA.event({ category: 'Social Media', action: 'Click', label: 'Gmail' })}
+                    onClick={() => registryEvent(AnalyticsEvent.EmailClick) }
                     className='hover:scale-125 transition-transform'
                     href='mailto:peenyaa7@gmail.com'
                     target='_blank'

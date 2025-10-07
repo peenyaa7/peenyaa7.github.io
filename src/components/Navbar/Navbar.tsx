@@ -2,7 +2,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { LOCALES } from '../../i18n/i18n';
 import { IconSun } from '../../icons/IconSun';
 import { IconMoon } from '../../icons/IconMoon';
-import ReactGA from 'react-ga4';
+import { AnalyticsEvent, registryEvent } from '../../services/AnalyticsService';
 
 export const Navbar = () => {
 
@@ -42,7 +42,7 @@ export const Navbar = () => {
                     className="theme-controller"
                     value="fantasy"
                     aria-label="Cambiar de tema visual"
-                    onClick={() => ReactGA.event({ category: 'Theme', action: 'Click', label: 'Theme Changer' })}
+                    onClick={(event) => registryEvent(event.currentTarget.checked ? AnalyticsEvent.ThemeLightClick : AnalyticsEvent.ThemeDarkClick) }
                 />
 
                 <IconSun className='swap-off fill-current' />
@@ -63,7 +63,7 @@ export const Navbar = () => {
                                 key={locale}
                                 onClick={() => {
                                     changeLanguage(locale);
-                                    ReactGA.event({ category: 'Language', action: 'Click', label: `Change Language to ${LOCALES[locale]}` });
+                                    registryEvent(locale === 'es' ? AnalyticsEvent.LanguageEsToggle : AnalyticsEvent.LanguageEnToggle);
                                     const element = document.activeElement;
                                     if (element && element instanceof HTMLElement) element.blur();
                                 }}

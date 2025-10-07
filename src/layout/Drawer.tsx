@@ -10,14 +10,14 @@ import { IconBriefcase } from '../icons/IconBriefcase'
 import { IconNewspaper } from '../icons/IconNewspaper'
 import { IconHandPeace } from '../icons/IconHandPeace'
 import { useEffect } from 'react'
-import ReactGA from 'react-ga4'
+import { AnalyticsEvent, registryEvent } from '../services/AnalyticsService'
 
 export const Drawer = () => {
 
     useTranslation();
 
     useEffect(() => {
-        ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
+        registryEvent(AnalyticsEvent.PageView);
     }, []);
 
     const toggleDrawer = () => {

@@ -5,7 +5,7 @@ import { IconBriefcase } from '../../icons/IconBriefcase';
 import { Trans, useTranslation } from 'react-i18next';
 import { WORK_EXPERIENCES } from '../../data/WorkExperiences';
 import { EDUCATION_EXPERIENCES } from '../../data/EducationExperiences';
-import ReactGA from 'react-ga4';
+import { AnalyticsEvent, registryEvent } from '../../services/AnalyticsService';
 import i18n from '../../i18n/i18n';
 
 export const ExperienceSection = () => {
@@ -36,7 +36,7 @@ export const ExperienceSection = () => {
                         checked={selected === 'work'}
                         onChange={() => {
                             selected === 'work' ? setSelected('education') : setSelected('work');
-                            ReactGA.event({ category: 'Experience', action: 'Change', label: selected === 'work' ? 'Education' : 'Work' })
+                            registryEvent(selected === 'work' ? AnalyticsEvent.SectionToggleEducation : AnalyticsEvent.SectionToggleExperience)
                         }}
                         aria-label='Cambiar entre experiencia laboral y formación académica'
                     />
